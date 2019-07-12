@@ -17,3 +17,9 @@
 // +9 dog years for second year
 // +5 dog years for each year after that
 
+const humanYearsCatYearsDogYears = humanYears => [
+    humanYears,
+    (humanYears - 1 ? 16 : 11) + 4 * humanYears,
+    (humanYears - 1 ? 14 : 10) + 5 * humanYears,
+  ]
+  

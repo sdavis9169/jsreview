@@ -13,3 +13,10 @@
 
 // Some random tests might fail due to a bug in the JavaScript implementation. Simply resubmit if that happens to you.
 
+
+const predictAge = (...ages) =>
+  Math.floor(
+    Math.sqrt(
+      ages.map(age => age * age).reduce((total, age) => total + age, 0)
+    ) / 2
+  )

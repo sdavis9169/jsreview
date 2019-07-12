@@ -14,5 +14,10 @@
 //
 // Good luck! :-)
 
-
-
+const lostSheep = (friday, saturday, total) => {
+  const comeback = [...friday, ...saturday].reduce(
+    (sum, sheeps) => sum + sheeps,
+    0
+  )
+  return total - comeback
+} 

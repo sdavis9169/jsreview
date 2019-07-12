@@ -10,3 +10,7 @@
 //
 // Can you write a function that takes in a noun as a string, and returns her preferred band name written as a string?
 
+const bandNameGenerator = str =>
+  str.endsWith(str[0])
+    ? `${str[0].toUpperCase()}${str.slice(1)}${str.slice(1)}`
+    : `The ${str.slice(0, 1).toUpperCase()}${str.slice(1)}`

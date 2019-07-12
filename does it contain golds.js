@@ -2,3 +2,10 @@
 
 // So, you need to check if there is gold in the bucket, and if so, return True/true. If not, return False/false.
 
+function checkTheBucket(bucket){
+    if (bucket.includes('gold')){
+        return true
+    } else {
+        return false
+    }
+  }

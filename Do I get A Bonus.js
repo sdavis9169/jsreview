@@ -6,3 +6,4 @@
 //
 // Return the total figure the individual will receive as a string prefixed with '£' (JS and Java) or '$' (C#, C++, Ruby, Clojure, Elixir, PHP and Python).
 
+const bonusTime = (salary, bonus) => `£${salary * (bonus ? 10 : 1)}`

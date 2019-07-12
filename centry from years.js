@@ -15,3 +15,5 @@
 
 // NOTE: for C++, cmath (i.e. math.h) is disallowed in this Kata, in particular the ceil function; otherwise, what is the fun of this Kata? ;)
 
+const century = year =>
+  year % 100 === 0 ? parseInt(year / 100, 0) : parseInt(year / 100, 0) + 1

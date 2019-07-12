@@ -4,3 +4,7 @@
 
 // Return: a 'Yes' string for true and a 'No' string for false
 
+let boolToWord = bool => bool ? 'Yes' :  'No';
+
+
+console.log(boolToWord(false))

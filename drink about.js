@@ -18,3 +18,20 @@
 // peopleWithAgeDrink(20) === "drink beer"
 // peopleWithAgeDrink(30) === "drink whisky"
 
+
+
+function peopleWithAgeDrink(old) {
+    switch (true){
+        case old < 14 :
+        return 'drink toddy';
+        case old > 13 && old < 18 :
+        return 'drink coke';
+        case old == 18 :
+        return 'drink beer';
+        case old < 21 && old > 18:
+        return 'drink beer';
+        case old > 20 :
+        return 'drink whisky'
+    }
+  };
+

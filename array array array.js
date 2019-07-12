@@ -9,3 +9,7 @@
 // if (x) == ['a', 3] you should return [['a', 3], ['a', 3], ['a', 3]].
 
 
+const explode = x => {
+    const score = x.filter(Number).reduce((total, number) => total + number, 0)
+    return score ? new Array(score).fill(x) : 'Void!'
+  }

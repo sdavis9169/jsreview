@@ -6,3 +6,4 @@
 
 // Output: "HEllO WOrld!"
 
+const swap = st => st.replace(/[aeiou]/g, vowel => vowel.toUpperCase())

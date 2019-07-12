@@ -18,3 +18,12 @@
 // ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
 
+function openOrSenior(data) {
+    return data.map(member => {
+      const age = member[0]
+      const handicap = member[1]
+  
+      return age >= 55 && handicap > 7 ? 'Senior' : 'Open'
+    })
+  }
+  

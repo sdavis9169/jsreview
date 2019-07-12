@@ -10,3 +10,8 @@
 // Reference: JS, Ruby, Python, C#
 
 
+class Cat extends Animal {
+    speak() {
+      return `${this.name} meows.`;
+    }
+  }

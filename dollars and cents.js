@@ -11,3 +11,4 @@
 // 3.1 needs to become $3.10
 // Good luck! Your team knows they can count on you!
 
+const formatMoney = amount => `$${amount.toFixed(2)}`

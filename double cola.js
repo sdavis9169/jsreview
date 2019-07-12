@@ -13,6 +13,10 @@
 // Return the single line — the name of the person who drinks the n-th can of cola. The cans are numbered starting from 1.
 
 
-  
+function whoIsNext(names, r) {
+    let l = names.length; 
+    while (r >= l) { r -= l; l *= 2; } 
+    return names[Math.ceil(names.length * r / l)-1]
+}
 
   
